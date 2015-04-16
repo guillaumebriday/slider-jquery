@@ -2,10 +2,11 @@
 
     $.fn.compare=function(options){
 
-
     	var defauts =
 		    {
-				'rollback': true
+				'rollback': true,
+                'duration' : 400,
+                'width' : '50%'
             };  
            
         var params = $.extend(defauts, options);
@@ -17,7 +18,7 @@
 
             container.mousemove(function(e){
         		$(lastImgContainer).css({
-        			"width" : container.width() - (e.pageX - container.offset().left)
+        			"width" : container.width() - (e.pageX - container.offset().left) // container's width - mouse's position from left in the container 
         		});
 
 	    	});
@@ -26,8 +27,8 @@
             if(params.rollback){
             	container.mouseleave(function(){
 		        	lastImgContainer.animate({
-		        		"width" : "50%"
-		        	});
+		        		"width" : params.width
+		        	}, params.duration);
 		    	});
             }
 

@@ -24,7 +24,7 @@ Le plugin a besoin de Jquery pour fonctionner.
 1. Inclure le css :
 
     ```html
-        <link rel="stylesheet" href="js-slider.min.css">    
+        <link rel="stylesheet" href="js-slider.css">    
     ```
     
 2. Inclure Jquery et le plugins:
@@ -32,6 +32,7 @@ Le plugin a besoin de Jquery pour fonctionner.
     ```html
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="js-slider.min.js"></script>
+        // <script src="js-slider.js"></script>
     ```
 
 3. Coller la structure HTML du plugin où vous le souhaitez :
@@ -56,12 +57,18 @@ Le plugin a besoin de Jquery pour fonctionner.
         })(jQuery);
     ```
 
-    Vous pouvez également rajouter une option : "callback", qui permet de faire revenir automatiquement ou non le slider au milieu lorsque la souris ne survole plus les images. 
+    Vous pouvez également rajouter des options : 
+
+    * callback : permet de faire revenir automatiquement ou non le slider au milieu lorsque la souris ne survole plus les images.
+    * duration : C'est le durée de l'animation de "callback" en ms
+    * width : C'est la taille par défaut de la seconde image
 
     ```javascript
         (function($){
             $(".js-slider-container").compare({
-                "callback" : false // default : true
+                callback : true, // true|false
+                duration : 400, // Durée de l'animation en ms
+                width : '50%'
             });
         })(jQuery);
     ```  
