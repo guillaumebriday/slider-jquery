@@ -1,7 +1,5 @@
 (function($){
 
-	$(".element-container").compare({
-		"rollback" : true // true|false
-	});
+	$(".js-slider-container").compare();
 
 })(jQuery);
