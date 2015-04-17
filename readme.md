@@ -54,7 +54,7 @@ Le plugin a besoin de Jquery pour fonctionner.
 
     ```javascript
         (function($){
-            $(".js-slider-container").compare();
+            $(".js-slider-container").slider();
         })(jQuery);
     ```
 
@@ -66,7 +66,7 @@ Le plugin a besoin de Jquery pour fonctionner.
 
     ```javascript
         (function($){
-            $(".js-slider-container").compare({
+            $(".js-slider-container").slider({
                 callback : true, // true|false
                 duration : 400, // Durée de l'animation en ms
                 width : '50%'
