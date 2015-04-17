@@ -1,22 +1,11 @@
 .wrap {
-
-
-  width: 900px;
-  margin: 0 auto;
-
-
+	width: 900px;
+	margin: 0 auto;
 }
 
-
-@media all and (max-width: 920px){
-
-.wrap {
-
-
-  width: 100%;
-  margin: 0;
-
-
-}
-
+@media all and (max-width: 920px) {
+	.wrap {
+		width: 100%;
+		margin: 0;
+	}
 }

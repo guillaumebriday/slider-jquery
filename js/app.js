@@ -1,5 +1,5 @@
 (function($){
 
-	$(".js-slider-container").compare();
+	$(".js-slider-container").slider();
 
 })(jQuery);

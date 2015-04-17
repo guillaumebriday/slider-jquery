@@ -1,13 +1,12 @@
 (function($){
 
-    $.fn.compare=function(options){
+    $.fn.slider=function(options){
 
-    	var defauts =
-		    {
-				'rollback': true,
-                'duration' : 400,
-                'width' : '50%'
-            };  
+    	var defauts = {
+			'rollback': true,
+            'duration' : 400,
+            'width' : '50%'
+        };  
            
         var params = $.extend(defauts, options);
 
@@ -20,7 +19,6 @@
         		$(lastImgContainer).css({
         			"width" : container.width() - (e.pageX - container.offset().left) // container's width - mouse's position from left in the container 
         		});
-
 	    	});
 
 

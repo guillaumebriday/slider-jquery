@@ -24,15 +24,16 @@ Le plugin a besoin de Jquery pour fonctionner.
 1. Inclure le css :
 
     ```html
-        <link rel="stylesheet" href="js-slider.css">    
+        <link rel="stylesheet" href="js-slider.min.css">
+        // <link rel="stylesheet" href="js-slider.css">   
     ```
     
 2. Inclure Jquery et le plugins:
 
     ```html
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="js-slider.min.js"></script>
-        // <script src="js-slider.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script  type="text/javascript" src="js-slider.min.js"></script>
+        // <script  type="text/javascript" src="js-slider.js"></script>
     ```
 
 3. Coller la structure HTML du plugin où vous le souhaitez :
@@ -41,9 +42,9 @@ Le plugin a besoin de Jquery pour fonctionner.
 
     ```html
         <div class="js-slider-container">
-            <img src="img/before.jpg" class="js-slider-first" />
+            <img src="before.jpg" class="js-slider-first" />
             <div class="js-slider-last-container">
-                <img src="img/after.jpg" class="js-slider-last">
+                <img src="after.jpg" class="js-slider-last">
             </div>
         </div>  
     ```
