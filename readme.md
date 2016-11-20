@@ -60,14 +60,14 @@ Le plugin a besoin de Jquery pour fonctionner.
 
     Vous pouvez également rajouter des options : 
 
-    * callback : permet de faire revenir automatiquement ou non le slider au milieu lorsque la souris ne survole plus les images.
+    * rollback : permet de faire revenir automatiquement ou non le slider au milieu lorsque la souris ne survole plus les images.
     * duration : C'est le durée de l'animation de "callback" en ms
     * width : C'est la taille par défaut de la seconde image
 
     ```javascript
         (function($){
             $(".js-slider-container").slider({
-                callback : true, // true|false
+                rollback : true, // true|false
                 duration : 400, // Durée de l'animation en ms
                 width : '50%'
             });
