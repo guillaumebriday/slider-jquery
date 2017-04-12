@@ -1,7 +1,7 @@
 # Slider Jquery v1.0
 
 Ce plugin vous permettra de faire simplement des sliders entre deux images au survol de la souris.
-Vous pouvez également accéder à une démo en ligne sur http://guillaumebriday.fr/demo/Slider.
+Vous pouvez également accéder à une démo en ligne sur http://guillaumebriday.github.io/slider-jquery/.
 
 ## Table des matières
 
@@ -25,9 +25,9 @@ Le plugin a besoin de Jquery pour fonctionner.
 
     ```html
         <link rel="stylesheet" href="js-slider.min.css">
-        // <link rel="stylesheet" href="js-slider.css">   
+        // <link rel="stylesheet" href="js-slider.css">
     ```
-    
+
 2. Inclure Jquery et le plugins:
 
     ```html
@@ -46,7 +46,7 @@ Le plugin a besoin de Jquery pour fonctionner.
             <div class="js-slider-last-container">
                 <img src="after.jpg" class="js-slider-last">
             </div>
-        </div>  
+        </div>
     ```
 
 
@@ -58,7 +58,7 @@ Le plugin a besoin de Jquery pour fonctionner.
         })(jQuery);
     ```
 
-    Vous pouvez également rajouter des options : 
+    Vous pouvez également rajouter des options :
 
     * rollback : permet de faire revenir automatiquement ou non le slider au milieu lorsque la souris ne survole plus les images.
     * duration : C'est le durée de l'animation de "callback" en ms
@@ -72,7 +72,7 @@ Le plugin a besoin de Jquery pour fonctionner.
                 width : '50%'
             });
         })(jQuery);
-    ```  
+    ```
 
 ## Informations complémentaires
 
